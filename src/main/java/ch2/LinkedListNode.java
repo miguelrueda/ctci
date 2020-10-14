@@ -5,6 +5,10 @@ public class LinkedListNode {
     public LinkedListNode next = null;
     public int data;
 
+    public LinkedListNode() {
+        data = 0;
+    }
+
     public  LinkedListNode(int d) {
         data = d;
     }

@@ -22,4 +22,36 @@ public class Utils {
         return list;
     }
 
+    public static LinkedListNode createStraightList(int size) {
+        if (size <= 0) {
+            return new LinkedListNode(1);
+        }
+        LinkedListNode list = new LinkedListNode(0);
+        for (int i = 1; i < size; i++) {
+            list.appendToTail(i);
+        }
+        return list;
+    }
+
+    public static LinkedListNode createCustomTestList(int [] array) {
+        if (array.length <= 0) {
+            return new LinkedListNode(0);
+        }
+        LinkedListNode list = new LinkedListNode(array[0]);
+        for (int i = 1; i < array.length; i++) {
+            list.appendToTail(array[i]);
+        }
+        return list;
+    }
+
+    public static int length(LinkedListNode head) {
+        if (head == null) return 0;
+        int count = 0;
+        while (head != null) {
+            count++;
+            head = head.next;
+        }
+        return count;
+    }
+
 }
