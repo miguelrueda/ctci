@@ -88,6 +88,8 @@ class TestStrip {
 
 public class Poison {
 
+    public static void main(String[] args) {
 
+    }
 
 }
